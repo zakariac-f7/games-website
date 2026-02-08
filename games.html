@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse and download all available APK games for Android. Filter by category and find your next favorite game.">
+    <meta name="keywords" content="APK games, Android games, download games, mobile games, game library">
+    <title>All Games - APK Gaming Hub</title>
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span class="logo-text">APK<span class="highlight">Gaming</span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="games.html" class="nav-link active">Games</a></li>
+                <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-gamepad"></i> All Games
+            </h1>
+            <p class="page-subtitle">Browse our complete collection of Android games</p>
+        </div>
+    </section>
+
+    <!-- Games Filter Section -->
+    <section class="games-section">
+        <div class="container">
+            <div class="filter-section">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search games..." />
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-th"></i> All
+                    </button>
+                    <button class="filter-btn" data-category="action">
+                        <i class="fas fa-gun"></i> Action
+                    </button>
+                    <button class="filter-btn" data-category="racing">
+                        <i class="fas fa-car-side"></i> Racing
+                    </button>
+                    <button class="filter-btn" data-category="puzzle">
+                        <i class="fas fa-puzzle-piece"></i> Puzzle
+                    </button>
+                    <button class="filter-btn" data-category="adventure">
+                        <i class="fas fa-dragon"></i> Adventure
+                    </button>
+                    <button class="filter-btn" data-category="sports">
+                        <i class="fas fa-football-ball"></i> Sports
+                    </button>
+                    <button class="filter-btn" data-category="strategy">
+                        <i class="fas fa-chess"></i> Strategy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="games-grid" id="gamesContainer">
+                <!-- Game Card 1 -->
+                <div class="game-card" data-category="action">
+                    <div class="game-image">
+                        <div class="game-badge">NEW</div>
+                        <div class="game-placeholder">
+                            <i class="fas fa-gun"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Shadow Warrior</h3>
+                        <p class="game-description">Epic action shooter with stunning graphics and intense gameplay</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 120 MB</span>
+                            <span class="game-category">Action</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card" data-category="racing">
+                    <div class="game-image">
+                        <div class="game-badge hot">HOT</div>
+                        <div class="game-placeholder">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Speed Legends</h3>
+                        <p class="game-description">Ultimate racing experience with realistic physics and graphics</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 95 MB</span>
+                            <span class="game-category">Racing</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="game-card" data-category="puzzle">
+                    <div class="game-image">
+                        <div class="game-placeholder">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Brain Master</h3>
+                        <p class="game-description">Challenge your mind with hundreds of creative puzzles</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 45 MB</span>
+                            <span class="game-category">Puzzle</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card" data-category="adventure">
+                    <div class="game-image">
+                        <div class="game-placeholder">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Dragon Quest</h3>
+                        <p class="game-description">Epic adventure through mystical lands filled with dragons</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 150 MB</span>
+                            <span class="game-category">Adventure</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 5 -->
+                <div class="game-card" data-category="sports">
+                    <div class="game-image">
+                        <div class="game-placeholder">
+                            <i class="fas fa-football-ball"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Soccer Champions</h3>
+                        <p class="game-description">Experience the thrill of soccer with realistic gameplay</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 110 MB</span>
+                            <span class="game-category">Sports</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 6 -->
+                <div class="game-card" data-category="strategy">
+                    <div class="game-image">
+                        <div class="game-badge">NEW</div>
+                        <div class="game-placeholder">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Empire Builder</h3>
+                        <p class="game-description">Build your empire and conquer the world strategically</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 85 MB</span>
+                            <span class="game-category">Strategy</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 7 -->
+                <div class="game-card" data-category="action">
+                    <div class="game-image">
+                        <div class="game-placeholder">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Combat Strike</h3>
+                        <p class="game-description">Fast-paced multiplayer action shooter experience</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 130 MB</span>
+                            <span class="game-category">Action</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 8 -->
+                <div class="game-card" data-category="racing">
+                    <div class="game-image">
+                        <div class="game-placeholder">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Moto Racing</h3>
+                        <p class="game-description">High-speed motorcycle racing on challenging tracks</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 75 MB</span>
+                            <span class="game-category">Racing</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 9 -->
+                <div class="game-card" data-category="puzzle">
+                    <div class="game-image">
+                        <div class="game-badge hot">HOT</div>
+                        <div class="game-placeholder">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Block Master</h3>
+                        <p class="game-description">Addictive block puzzle game with endless levels</p>
+                        <div class="game-meta">
+                            <span class="game-size"><i class="fas fa-hdd"></i> 35 MB</span>
+                            <span class="game-category">Puzzle</span>
+                        </div>
+                        <a href="game-detail.html" class="btn-download">
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No games found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="logo-text">APK<span class="highlight">Gaming</span></span>
+                    </div>
+                    <p class="footer-desc">Your ultimate destination for downloading the best Android games. Safe, fast, and free.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">All Games</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="games.html?category=action">Action</a></li>
+                        <li><a href="games.html?category=racing">Racing</a></li>
+                        <li><a href="games.html?category=puzzle">Puzzle</a></li>
+                        <li><a href="games.html?category=adventure">Adventure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 APK Gaming Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
